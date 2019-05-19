@@ -25,7 +25,7 @@
 - Generate the token secret [here](https://mkjwk.org/) and add it to Now `now secret add SECRET <your token secret>`
 - Add your mongodb URI `now secret add DATABASE_URI <your token secret>`
 - Run dev `now dev` and open `localhost:3000`
-- the schema can be explored on the right end side of the Graphql playground
+- The schema can be explored on the right end side of the Graphql playground
 
 
 Enjoy! You just saved a couple of days of faffing around with boring stuff 🤴
@@ -92,7 +92,7 @@ Permissions for the members of an Organization are currently hard-coded (PRs for
 
  Permissions are inferred from the User ID attached to the JWT token in the `Authorization` header.
 
- to edit members (and their relevant permissions) simply make a call to with the `editOrganization` operation:
+ To edit members (and their relevant permissions) simply make a call to with the `editOrganization` operation:
  ```
  mutation edit {
   editOrganization(input:{
